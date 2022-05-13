@@ -12,7 +12,7 @@ class _DetaySayfaState extends State<DetaySayfa> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Antalya"),
+        title: Text(""),
       ),
       body: Center(
         child: Column(
