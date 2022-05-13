@@ -33,7 +33,7 @@ class _AnasayfaState extends State<Anasayfa> {
     var bolgeListesi = await Bolgelerdao().tumBolgeler();
 
     return bolgeListesi;
-  }//İçerisinde bolgeler(bolge nesnesiolan) sınıfında veri olan bir liste verecek
+  }//İçerisinde bolgeler(bolge nesnesi olan) sınıfında veri olan bir liste verecek
 
   @override
   Widget build(BuildContext context) {
@@ -42,7 +42,7 @@ class _AnasayfaState extends State<Anasayfa> {
         title: Text("Bölgeler"),
       ),
       body: FutureBuilder<List<Bolgeler>>(//içerisinde bolgeler olan bir
-        // liste getiricek liste dolu mu boş mu kontrolü
+        // liste getirecek liste dolu mu boş mu kontrolü
         future:  tunBolgeleriGoster(),
         builder: (context,snapshot){
           if(snapshot.hasData){
